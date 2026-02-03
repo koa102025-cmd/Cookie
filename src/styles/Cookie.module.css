@@ -1,4 +1,4 @@
-button {
+.button {
 	position: relative;
 	border: 5px rgb(132, 52, 66) solid;
 	border-radius: 1rem;
@@ -11,7 +11,7 @@ button {
 	margin-bottom: 1rem;
 }
 
-button::before {
+.button::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -21,24 +21,24 @@ button::before {
 	background: linear-gradient(
 		135deg,
 		rgba(255, 253, 253, 0.9) 0%,
-		rgba(192, 103, 103, 0.6) 100%
+		rgba(185, 160, 215, 0.6) 100%
 	);
 	z-index: -1;
 	opacity: 0;
 	transition: opacity 0.3s ease-in-out;
 }
 
-button:hover {
+.button:hover {
 	transform: translateY(-2px);
 	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 	color: rgb(132, 52, 66);
 }
 
-button:hover::before {
+.button:hover::before {
 	opacity: 1;
 }
 
-button:active {
+.button:active {
 	transform: translateY(2px);
 }
 
@@ -55,10 +55,13 @@ button:active {
 	margin-bottom: 1rem;
 }
 
-section {
+.cookie {
 	text-align: center;
 	background-color: rgb(177, 76, 98);
 	width: min-content;
 	padding: 1rem;
 	border-radius: 1rem;
+	border: 3px rgb(132, 52, 66) solid;
+
+	/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); */
 }

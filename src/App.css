@@ -9,7 +9,12 @@ body {
 	margin-left: 3rem;
 	display: flex;
 	align-items: center;
-	background-color: whitesmoke;
+	background-color: rgb(218, 215, 236);
+	background-image: radial-gradient(
+		circle,
+		transparent 10%,
+		rgba(122, 41, 41, 0.4) 100%
+	);
 	font-family:
 		system-ui,
 		-apple-system,
@@ -22,4 +27,10 @@ body {
 		"Open Sans",
 		"Helvetica Neue",
 		sans-serif;
+}
+
+main {
+	display: flex;
+	gap: 3rem;
+	align-items: flex-start;
 }

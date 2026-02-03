@@ -1,0 +1,104 @@
+.users {
+	color: #fffbf9;
+	min-width: 32rem;
+	min-height: 32rem;
+
+	background-color: #b5425b;
+	padding: 2rem;
+	border-radius: 1rem;
+	border: 3px rgb(132, 52, 66) solid;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.person {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(92, 14, 14, 0.226);
+	margin-bottom: 0.8rem;
+	padding: 0.3rem 1rem;
+	border-radius: 1rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.username {
+	font-size: 1.8rem;
+	margin-right: 2rem;
+}
+
+.email {
+	font-size: 1.2rem;
+}
+
+.inputField {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.inputUsername,
+.inputEmail {
+	border: 3px rgb(132, 52, 66) solid;
+	padding: 1.2rem;
+	font-size: 1.1rem;
+	background-color: #f4f6ff;
+	width: 15rem;
+	height: 3rem;
+	border-radius: 1rem;
+	font-weight: 600;
+	color: #802f00;
+
+	outline: none;
+	transition: all 0.25s ease-in-out;
+}
+
+.inputUsername::placeholder,
+.inputEmail::placeholder {
+	font-size: 1rem;
+	color: #6e5d54;
+	opacity: 0.85;
+}
+
+.inputUsername:focus,
+.inputEmail:focus {
+	font-size: 1.2rem;
+	background-color: #ffffff;
+	padding-left: 0.8rem;
+}
+
+.button {
+	width: 3.5rem;
+	height: 2.8rem;
+	border: none;
+	border-radius: 1rem;
+	font-family: "Courier New", Courier, monospace;
+
+	background-color: rgb(132, 52, 66);
+	color: white;
+	font-size: 3rem;
+	font-weight: bold;
+
+	cursor: pointer;
+	transition: all 0.2s ease;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+	background-color: rgb(155, 65, 80);
+	transform: translateY(-2px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button:active {
+	transform: scale(0.95);
+}

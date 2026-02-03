@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Cookie() {
 	const [point, setPoint] = useState(0);
 	return (
-		<section>
+		<section className={styles.cookie}>
 			<button
 				className={styles.button}
 				onClick={() => setPoint((prev) => prev + 1)}>
