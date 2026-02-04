@@ -46,8 +46,8 @@
 	border: 3px rgb(132, 52, 66) solid;
 	padding: 1.2rem;
 	font-size: 1.1rem;
-	background-color: #f4f6ff;
-	width: 15rem;
+	background-color: #dfe1eb;
+	width: 50%;
 	height: 3rem;
 	border-radius: 1rem;
 	font-weight: 600;
@@ -66,9 +66,7 @@
 
 .inputUsername:focus,
 .inputEmail:focus {
-	font-size: 1.2rem;
 	background-color: #ffffff;
-	padding-left: 0.8rem;
 }
 
 .button {

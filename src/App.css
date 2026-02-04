@@ -5,10 +5,10 @@
 }
 
 body {
-	margin-top: 3rem;
-	margin-left: 3rem;
+	margin: 3rem;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	background-color: rgb(218, 215, 236);
 	background-image: radial-gradient(
 		circle,
@@ -33,4 +33,22 @@ main {
 	display: flex;
 	gap: 3rem;
 	align-items: flex-start;
+}
+
+html {
+	font-size: clamp(
+		15px,
+		15px + (20 - 10) * ((100vw - 1400px) / (2500 - 1400)),
+		20px
+	);
+}
+
+@media screen and (max-width: 1124px) {
+	html {
+		font-size: clamp(
+			6px,
+			6px + (12 - 8) * ((100vw - 320px) / (1124 - 320)),
+			12px
+		);
+	}
 }
